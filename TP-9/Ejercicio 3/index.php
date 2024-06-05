@@ -13,8 +13,8 @@
     la página que procesa el formulario la cantidad de deportes que practica.
 */
 
-$nombre = $_REQUEST['nombre'];
-$deportes = $_REQUEST['deportes'];
+$nombre = $_REQUEST["nombre"];
+$deportes = $_REQUEST["deportes"];
 
 $cantidad = count($deportes);
 
