@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--
+        5. Diseñar un formulario de suscripción para un sitio web. Solicitar el nombre y apellido
+    completos de la persona, la edad, DNI, fecha de nacimiento, género, lugar de
+    nacimiento, dirección, intereses y/o hobbies, comentarios, entre otros. La página que
+    procesa el formulario debe mostrar las modificaciones realizadas por el usuario. Actualizar
+    el sitio Web.
+    -->
+
+    <form action="index.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni" required><br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+        <label for="genero">Genero:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+
+        <label for="lugar_nacimiento">Lugar de Nacimiento:</label>
+        <input type="text" id="lugar_nacimiento" name="lugar_nacimiento" required><br><br>
+
+        <label for="direccion">direccion:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br>
+
+        <label for="intereses">Intereses/Hobbies:</label><br>
+        <input type="checkbox" id="deporte" name="intereses[]" value="Deporte">
+        <label for="deporte">Deporte</label><br>
+        <input type="checkbox" id="musica" name="intereses[]" value="Música">
+        <label for="musica">Musica</label><br>
+        <input type="checkbox" id="lectura" name="intereses[]" value="Lectura">
+        <label for="lectura">Lectura</label><br>
+        <input type="checkbox" id="viajar" name="intereses[]" value="Viajar">
+        <label for="viajar">Viajar</label><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>

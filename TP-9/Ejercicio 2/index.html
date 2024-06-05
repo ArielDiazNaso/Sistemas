@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <!--
+        Solicitar que se ingrese por teclado el nombre de una persona, disponer tres controles
+        de tipo radio que nos permitan seleccionar su nivel de estudio:
+        1-Primarios, 2-Secundarios, 3-Terciario, 4-Universitario, 5- Sin estudios.
+        En la página que procesa el formulario mostrar el nombre de la persona y un mensaje
+        indicando el tipo de estudios que posee.
+    -->
+
+    <form action="index.php" method="POST">
+            Ingrese primer valor:
+        <input type="text" name="valor1">
+        <br>
+        Ingrese segundo valor:
+        <input type="text" name="valor2">
+        <br>
+        <input type="radio" name="radio1" value="Primarios">sumar
+        <br>
+        <input type="radio" name="radio1" value="Secundarios">restar
+        <br>
+        <input type="radio" name="radio1" value="Terciario">restar
+        <br>
+        <input type="radio" name="radio1" value="Universitario">restar
+        <br>
+        <input type="radio" name="radio1" value="Sin estudios">restar
+        <br>
+
+
+
+        <input type="submit" name="operar">
+
+    </form>
+
+</body>
+</html>

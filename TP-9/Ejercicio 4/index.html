@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--
+        4. Elaborar un formulario que solicite el ingreso del nombre de una persona y un control
+    select (que permita la selección del monto adeudado de la persona (1-1000,1001-
+    10.000,>10.000). En la página que procesa el formulario mostrar un mensaje si debe pagar
+    un recargo (si supera 10.000).
+    -->
+
+    <form action="index.php" method="POST">
+
+        Ingrese su nombre:
+        <input type="text" name="nombre">
+        <br>
+        Seleccione el monto adeudado:
+        <select name="monto">
+          <option value="1-1000">1-1000</option>
+          <option value="1001-10000">1001-10000</option>
+          <option value=">10000">>10000</option>
+        </select>
+        <br>
+    <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--
+        3. Elaborar un formulario que solicite la carga del nombre de una persona y que permita
+    seleccionar una serie de deportes que practica (futbol, basket, tennis, voley). Mostrar en
+    la página que procesa el formulario la cantidad de deportes que practica.
+    -->
+
+    <form action="index.php" method="POST">
+
+        Ingrese su nombre:
+        <input type="text" name="nombre">
+        <br>
+        <input type="checkbox" name="deportes[]" value="Futbol">Futbol
+        <br>
+        <input type="checkbox" name="deportes[]" value="Basket">Basket
+        <br>
+        <input type="checkbox" name="deportes[]" value="Tennis">Tennis
+        <br>
+        <input type="checkbox" name="deportes[]" value="Voley">Voley
+        <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
