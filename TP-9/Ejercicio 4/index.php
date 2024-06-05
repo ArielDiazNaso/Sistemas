@@ -13,8 +13,8 @@
   un recargo (si supera 10.000).
 */
 
-  $nombre = $_REQUEST['nombre'];
-  $monto = $_REQUEST['monto'];
+  $nombre = $_REQUEST["nombre"];
+  $monto = $_REQUEST["monto"];
   
   if ($monto == ">10000") {
     echo "$nombre debe pagar un recargo por superar los 10000.";
